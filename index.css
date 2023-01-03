@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #212121;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+    color: #fff;
+    font-family: 'Dela Gothic One', cursive;
+    font-weight: 100;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    padding: 5px;
+}
+
+.highlight {
+    color: #db8a74;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section {
+    height: 110vh;
+    width: 100%;
+}
+
+i {
+    color: #db8a74;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.float {
+    animation: float 2s ease-in-out infinite;
+}
+
+p,
+strong {
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(5px);
+    }
+
+    50% {
+        transform: translatey(30px);
+    }
+
+    100% {
+        transform: translatey(5px);
+    }
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.team img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    flex-wrap: wrap;
+    padding-top: 2%;
+}
+
+.xyz {
+    transform: scale(0.7);
+}
+
+.row img {
+    width: 300px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.mobile {
+    display: none;
+}
+
+.sponsor-image {
+    transition-duration: 0.45s;
+    border-radius: 25px;
+    width: 25%;
+}
+
+.sponsor-image img {
+    width: 90%;
+}
+
+.signup-hvr {
+    transition-duration: 0.45s;
+    margin: 10px;
+}
+
+.signup-hvr:hover {
+    transform: scale(1.1);
+}
+
+.one-of-two {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slant {
+    background-color: #db8a74;
+    height: auto;
+    width: 90%;
+}
+
+.slant img {
+    border: 1px solid #212121;
+    padding: 0;
+    transition: 0.45s;
+}
+
+.slant img:hover {
+    transform: scale(1.1);
+}
+img{
+    width: 10%;
+}
+@media screen and (max-width: 768px) {
+    img {
+        width: 70%;
+    }
+}
